@@ -10,7 +10,7 @@ Browser.drive {
 
     // check checkbox state (by name, index and id)
     assert $('input', name: 'checkbox1').value() == false // not checked as it returns false
-    assert $('input', 1).value() == 'value2' // checked as it returned something other than false
+    assert checkbox2().value() == 'value2' // checked as it returned something other than false
     assert $('input', 1).value() != false // checked as it returned something other than false
     assert $('#second-checkbox').value() == 'value2' // checked as is returned sometihing other than false
 
